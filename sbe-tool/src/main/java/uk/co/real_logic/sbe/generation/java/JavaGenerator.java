@@ -2750,7 +2750,8 @@ public class JavaGenerator implements CodeGenerator
                 "    }\n", generateChoiceUnsetInner(type));
     }
 
-    private String generateChoiceUnsetInner(PrimitiveType type) {
+    private String generateChoiceUnsetInner(final PrimitiveType type)
+    {
         switch (type)
         {
             case UINT8:
